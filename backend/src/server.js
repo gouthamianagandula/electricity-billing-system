@@ -24,6 +24,7 @@ app.use('/api/readings', require('./routes/readings'));
 app.use('/api/bills', require('./routes/bills'));
 app.use('/api/payments', require('./routes/payments'));
 app.use('/api/reports', require('./routes/reports'));
+app.use('/api/dashboard', require('./routes/dashboard'));
 
 // Generic error handler
 app.use((err, req, res, next) => {
@@ -33,3 +34,4 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`API running on port ${PORT}`));
+
