@@ -5,6 +5,9 @@ import Placeholder from './components/Placeholder';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Customers from './pages/Customers';
+import Readings from './pages/Readings';
+import Bills from './pages/Bills';
+import Payments from './pages/Payments';
 
 function Protected({ roles, children }) {
   const { user } = useAuth();
@@ -22,11 +25,11 @@ export default function App() {
         <Route path="customers" element={
           <Protected roles={['ADMIN', 'STAFF']}><Customers /></Protected>} />
         <Route path="readings" element={
-          <Protected roles={['ADMIN', 'STAFF', 'METER_READER']}><Placeholder title="Meter Readings" /></Protected>} />
+          <Protected roles={['ADMIN', 'STAFF', 'METER_READER']}><Readings /></Protected>} />
         <Route path="bills" element={
-          <Protected roles={['ADMIN', 'STAFF', 'CUSTOMER']}><Placeholder title="Bills" /></Protected>} />
+          <Protected roles={['ADMIN', 'STAFF', 'CUSTOMER']}><Bills /></Protected>} />
         <Route path="payments" element={
-          <Protected roles={['ADMIN', 'STAFF', 'CUSTOMER']}><Placeholder title="Payments" /></Protected>} />
+          <Protected roles={['ADMIN', 'STAFF', 'CUSTOMER']}><Payments /></Protected>} />
         <Route path="trends" element={
           <Protected roles={['CUSTOMER']}><Placeholder title="Consumption Trends" /></Protected>} />
         <Route path="reports" element={
@@ -36,4 +39,5 @@ export default function App() {
     </Routes>
   );
 }
+
 
