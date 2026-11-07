@@ -60,3 +60,16 @@ th { background: #f8fafc; color: var(--muted); font-weight: 600; }
   .sidebar { width: 100%; padding: 10px; }
   nav { display: flex; flex-wrap: wrap; gap: 4px; }
 }
+
+.section { margin-top: 16px; }
+.chart-title { margin: 0 0 12px; font-size: 16px; }
+.charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 16px; margin-top: 16px; }
+.form-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0 14px; margin-bottom: 8px; }
+.tabs.wide { max-width: 360px; }
+.table-wrap { overflow-x: auto; padding: 0; }
+.actions { white-space: nowrap; }
+.btn.danger { background: var(--red); }
+.due-box { display: flex; justify-content: space-between; align-items: center; gap: 12px; border-left: 5px solid var(--green); }
+.due-box.UNPAID { border-left-color: #eab308; }
+.due-box.OVERDUE { border-left-color: var(--red); }
+.btn { text-decoration: none; display: inline-block; }

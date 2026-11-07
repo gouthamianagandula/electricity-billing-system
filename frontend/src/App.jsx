@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Placeholder from './components/Placeholder';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import Customers from './pages/Customers';
 
 function Protected({ roles, children }) {
   const { user } = useAuth();
@@ -19,7 +20,7 @@ export default function App() {
       <Route element={<Protected><Layout /></Protected>}>
         <Route index element={<Dashboard />} />
         <Route path="customers" element={
-          <Protected roles={['ADMIN', 'STAFF']}><Placeholder title="Customers & Meters" /></Protected>} />
+          <Protected roles={['ADMIN', 'STAFF']}><Customers /></Protected>} />
         <Route path="readings" element={
           <Protected roles={['ADMIN', 'STAFF', 'METER_READER']}><Placeholder title="Meter Readings" /></Protected>} />
         <Route path="bills" element={
@@ -35,3 +36,4 @@ export default function App() {
     </Routes>
   );
 }
+
