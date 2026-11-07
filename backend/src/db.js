@@ -1,5 +1,6 @@
 require('dotenv').config();
-const { Pool } = require('pg');
+const { Pool, types } = require('pg');
+types.setTypeParser(1082, (v) => v); // DATE columns as plain strings
 
 const pool = new Pool({
   host: process.env.DB_HOST,

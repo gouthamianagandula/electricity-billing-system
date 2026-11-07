@@ -21,6 +21,9 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/customers', require('./routes/customers'));
 app.use('/api/meters', require('./routes/meters'));
 app.use('/api/readings', require('./routes/readings'));
+app.use('/api/bills', require('./routes/bills'));
+app.use('/api/payments', require('./routes/payments'));
+app.use('/api/reports', require('./routes/reports'));
 
 // Generic error handler
 app.use((err, req, res, next) => {
