@@ -8,6 +8,8 @@ import Customers from './pages/Customers';
 import Readings from './pages/Readings';
 import Bills from './pages/Bills';
 import Payments from './pages/Payments';
+import Trends from './pages/Trends';
+import Reports from './pages/Reports';
 
 function Protected({ roles, children }) {
   const { user } = useAuth();
@@ -31,13 +33,15 @@ export default function App() {
         <Route path="payments" element={
           <Protected roles={['ADMIN', 'STAFF', 'CUSTOMER']}><Payments /></Protected>} />
         <Route path="trends" element={
-          <Protected roles={['CUSTOMER']}><Placeholder title="Consumption Trends" /></Protected>} />
+          <Protected roles={['CUSTOMER']}><Trends /></Protected>} />
         <Route path="reports" element={
-          <Protected roles={['ADMIN', 'STAFF']}><Placeholder title="Reports" /></Protected>} />
+          <Protected roles={['ADMIN', 'STAFF']}><Reports /></Protected>} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
+
+
 
 

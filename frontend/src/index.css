@@ -73,3 +73,15 @@ th { background: #f8fafc; color: var(--muted); font-weight: 600; }
 .due-box.UNPAID { border-left-color: #eab308; }
 .due-box.OVERDUE { border-left-color: var(--red); }
 .btn { text-decoration: none; display: inline-block; }
+
+.wide-tabs { max-width: 720px; }
+.pad { padding: 16px; }
+.inline-form > div { min-width: 180px; }
+.inline-form input, .inline-form select { margin-bottom: 0; }
+.inline-form label { margin-bottom: 4px; }
+
+.wide-tabs { max-width: 720px; }
+.pad { padding: 16px; }
+.inline-form > div { min-width: 180px; }
+.inline-form input, .inline-form select { margin-bottom: 0; }
+.inline-form label { margin-bottom: 4px; }
