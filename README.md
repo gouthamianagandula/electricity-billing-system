@@ -2,8 +2,6 @@
 
 A full-stack web application that digitises the complete electricity billing cycle: customer and meter management, meter reading, slab-based billing, simulated payments, role-based dashboards and reports. The project is packaged with Docker and deployed on Kubernetes.
 
-Built for the **DevOps & Full Stack Development** course project (Project 57), B.Tech IV Year I Semester, SR University.
-
 ---
 
 ## Table of contents
