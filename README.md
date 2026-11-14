@@ -307,6 +307,4 @@ The application was tested with scripted API requests for every role, manual wal
 
 ## Author
 
-**Anagandula Gouthami** (Roll No. 2303A53040)
-School of Computer Science & Artificial Intelligence, SR University
-Course: DevOps & Full Stack Development, B.Tech IV Year I Semester, 2026-2027
+**Anagandula Gouthami**
